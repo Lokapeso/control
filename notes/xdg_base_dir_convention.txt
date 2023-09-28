@@ -1,0 +1,26 @@
+XDG Base Directory Specification (Spesifikasi Direktori Dasar XDG)
+
+XDG Base Directory Specification adalah spesifikasi yang mengatur file dan format file. Spesifikasi ini menentukan 
+di mana file-file ini harus disimpan dengan menentukan satu atau beberapa direktori dasar yang berkaitan dengan 
+lokasi file-file tersebut.
+
+Konsep:
+1. Tulis user-specific data di $XDG_DATA_HOME
+2. Tulis data konfigurasi di $XDG_CONFIG_HOME
+3. Tulis data cache di $XDG_CACHE_HOME
+
+Kalau spesifikasi variabel ini tidak ditetapkan:
+1. Tulis user-specific data di $HOME/.local/share
+2. Tulis data konfigurasi di $HOME/.config
+3. Tulis data cache di $HOME/.cache
+
+Contoh Default:
+1. HOME="/home/users"
+2. XDG_DATA_HOME="$HOME/.local/share"
+3. XDG_CONFIG_HOME="$HOME/.config" 
+4. XDG_CACHE_HOME="$HOME/.cache"
+
+Sumber: 
+1. https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+2. https://farbenmeer.de/blog/the-power-of-the-xdg-base-directory-specification
+3. https://wiki.archlinux.org/title/XDG_Base_Directory
